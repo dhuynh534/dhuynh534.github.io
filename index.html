@@ -143,12 +143,12 @@ Let’s connect!
                         <img src="https://media.discordapp.net/attachments/576769970604736524/1349874937417957597/IMG_7843.jpg?ex=67d4b080&is=67d35f00&hm=e254be24dc34cf5cb24e818721d8d6690f5fd2de4995b1d3e2b667c767c2436d&=&format=webp&width=1376&height=919" />
                     </div>
 			<style>
-    .project-image img {
-        width: 100%; /* Ensures the image takes up the full width */
-        height: auto; /* Maintains the aspect ratio */
-        object-fit: cover; /* Ensures the image fills the area without distortion */
-    }
-
+ .project-image img {
+    width: 100%; /* Makes the image take up the full width of the container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain; /* Ensures the whole image is visible */
+    object-position: left; /* Aligns the image to the left side of the container */
+}
     .project-image {
         padding: 10px; /* Adds space around the image */
     }
