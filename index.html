@@ -178,23 +178,67 @@ Let’s connect!
         </ul>
     </div>
     <!-- End #skills -->
-	<!-- Make sure to include Font Awesome in your HTML head -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    
+    <!-- Link to Font Awesome's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        .contact-buttons a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: #0073e6;
+            color: white;
+            font-weight: bold;
+            width: 200px;
+            justify-content: center;
+        }
+
+        .contact-buttons a .icon-img {
+            width: 30px; /* Control the size of the icon */
+            height: 30px; /* Ensure it remains proportional */
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .contact-buttons a:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
 
 <div id="contact">
     <h2 class="heading">Contact Me</h2>
     <div class="contact-buttons">
+        <!-- GitHub Button -->
         <a href="https://github.com/yourusername" target="_blank" class="contact-button github">
-            <img src="https://e7.pngegg.com/pngimages/646/324/png-clipart-github-computer-icons-github-logo-monochrome-thumbnail.png"GitHub Logo" class="icon-img"> GitHub
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/GitHub_Logo_2018.svg" alt="GitHub Logo" class="icon-img"> GitHub
         </a>
+
+        <!-- LinkedIn Button -->
         <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="contact-button linkedin">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013.png" alt="LinkedIn Logo" class="icon-img"> LinkedIn
         </a>
+
+        <!-- Email Button -->
         <a href="mailto:dhuynh534@gmail.com" class="contact-button email">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Letter_%28envelope%29_icon.svg/512px-Letter_%28envelope%29_icon.svg.png" alt="Email Logo" class="icon-img"> Email
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Letter_%28envelope%29_icon.svg" alt="Email Logo" class="icon-img"> Email
         </a>
     </div>
 </div>
+
+</body>
+</html>
+
 <!-- End #contact -->
    <footer>
     <div class="container">
