@@ -187,58 +187,66 @@ Let’s connect!
     
     <!-- Link to Font Awesome's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
     <style>
-        .contact-buttons a {
+        /* Style the contact buttons */
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-button {
             display: flex;
             align-items: center;
-            text-decoration: none;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 50px;
+            justify-content: center;
             background-color: #0073e6;
             color: white;
+            text-decoration: none;
+            font-size: 18px;
             font-weight: bold;
-            width: 200px;
-            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 50px; /* Makes the buttons rounded */
+            width: 220px;
+            transition: background 0.3s ease-in-out;
         }
 
-        .contact-buttons a .icon-img {
-            width: 30px; /* Control the size of the icon */
-            height: 30px; /* Ensure it remains proportional */
+        .contact-button i {
             margin-right: 10px; /* Space between icon and text */
+            font-size: 22px;
         }
 
-        .contact-buttons a:hover {
-            background-color: #005bb5;
+        .contact-button:hover {
+            background-color: #005bb5; /* Darker blue on hover */
         }
     </style>
 </head>
 <body>
 
 <div id="contact">
-    <h2 class="heading">Contact Me</h2>
-    <div class="contact-buttons">
+    <h2 class="heading" style="text-align: center;">Contact Me</h2>
+    <div class="contact-buttons" style="display: flex; flex-direction: column; align-items: center;">
         <!-- GitHub Button -->
         <a href="https://github.com/yourusername" target="_blank" class="contact-button github">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/GitHub_Logo_2018.svg" alt="GitHub Logo" class="icon-img"> GitHub
+            <i class="fab fa-github"></i> GitHub
         </a>
 
         <!-- LinkedIn Button -->
         <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="contact-button linkedin">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013.png" alt="LinkedIn Logo" class="icon-img"> LinkedIn
+            <i class="fab fa-linkedin"></i> LinkedIn
         </a>
 
         <!-- Email Button -->
         <a href="mailto:dhuynh534@gmail.com" class="contact-button email">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Letter_%28envelope%29_icon.svg" alt="Email Logo" class="icon-img"> Email
+            <i class="fas fa-envelope"></i> Email
         </a>
     </div>
 </div>
 
 </body>
 </html>
-
 <!-- End #contact -->
    <footer>
     <div class="container">
